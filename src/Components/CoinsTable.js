@@ -141,47 +141,54 @@ const CoinsTable = () => {
                   {SearchHandler().map((row) => {
                     const profit = row.price_change_percentage_24h > 0;
                     return (
-                      <TableRow>
-                        <Link to={`/coins/${row.id}`} className={classes.item}>
-                          <TableCell
-                            component="th"
-                            scope="row"
-                            styles={{
-                              display: "flex",
-                              gap: 15,
-                            }}
-                            key={row.id}
+                      <React.Fragment key={row.id}>
+                        <TableRow>
+                          <Link
+                            to={`/coins/${row.id}`}
                             className={classes.item}
                           >
-                            <img
-                              src={row?.image}
-                              alt={row.name}
-                              height="50"
-                              width="50"
-                              style={{ marginRight: "25vw" }}
-                            />
-                            <span className={classes.inneritem}>
-                              {row.name}
-                            </span>
-                            <span className={classes.inneritem}>
-                              {row.symbol}
-                            </span>
-                            <span className={classes.inneritem}>
-                              {numberWithCommas(row.current_price?.toFixed(2))}
-                            </span>
-                            <span
-                              className={classes.inneritem}
-                              style={{ color: profit > 0 ? "green" : "red" }}
+                            <TableCell
+                              component="th"
+                              scope="row"
+                              styles={{
+                                display: "flex",
+                                gap: 15,
+                              }}
+                              key={row.id}
+                              className={classes.item}
                             >
-                              {profit && "+"}&nbsp;
-                              {row.price_change_percentage_24h}%
-                            </span>
-                            <span className={classes.inneritem}>
-                              {numberWithCommas(row.market_cap?.toFixed(2))}
-                            </span>
-                          </TableCell>
-                        </Link>
-                      </TableRow>
+                              <img
+                                src={row?.image}
+                                alt={row.name}
+                                height="50"
+                                width="50"
+                                style={{ marginRight: "25vw" }}
+                              />
+                              <span className={classes.inneritem}>
+                                {row.name}
+                              </span>
+                              <span className={classes.inneritem}>
+                                {row.symbol}
+                              </span>
+                              <span className={classes.inneritem}>
+                                {numberWithCommas(
+                                  row.current_price?.toFixed(2)
+                                )}
+                              </span>
+                              <span
+                                className={classes.inneritem}
+                                style={{ color: profit > 0 ? "green" : "red" }}
+                              >
+                                {profit && "+"}&nbsp;
+                                {row.price_change_percentage_24h}%
+                              </span>
+                              <span className={classes.inneritem}>
+                                {numberWithCommas(row.market_cap?.toFixed(2))}
+                              </span>
+                            </TableCell>
+                          </Link>
+                        </TableRow>
+                      </React.Fragment>
                     );
                   })}
                 </TableBody>

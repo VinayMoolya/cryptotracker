@@ -8,6 +8,8 @@ import {
   makeStyles,
   ThemeProvider,
 } from "@material-ui/core";
+import { Chart as ChartJS } from "chart.js/auto";
+import { Chart } from "react-chartjs-2";
 import { Line } from "react-chartjs-2";
 import { chartDays } from "../Config/data";
 import SelectButton from "./SelectButton";
