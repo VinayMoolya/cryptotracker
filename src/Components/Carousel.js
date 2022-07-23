@@ -54,7 +54,7 @@ const Carousel = () => {
     return (
       <Link
         className={classes.carouselItem}
-        to={`https://vinaymoolya.github.io/cryptotracker/coins/${coin.id}`}
+        to={`/cryptotracker/coins/${coin.id}`}
       >
         <img
           src={coin.image}

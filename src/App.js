@@ -16,15 +16,8 @@ function App() {
       >
         <Header />
         <Routes>
-          <Route
-            path="https://vinaymoolya.github.io/cryptotracker"
-            element={<Homepage />}
-            exact
-          />
-          <Route
-            path="https://vinaymoolya.github.io/cryptotracker/coins/:id"
-            element={<CoinPage />}
-          />
+          <Route path="/cryptotracker" element={<Homepage />} exact />
+          <Route path="/cryptotracker/coins/:id" element={<CoinPage />} />
         </Routes>
       </div>
     </Router>
