@@ -144,7 +144,7 @@ const CoinsTable = () => {
                       <React.Fragment key={row.id}>
                         <TableRow>
                           <Link
-                            to={`/cryptotracker/coins/${row.id}`}
+                            to={`https://vinaymoolya.github.io/cryptotracker/coins/${row.id}`}
                             className={classes.item}
                           >
                             <TableCell
