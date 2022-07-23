@@ -17,5 +17,5 @@ function App() {
     
   );
 }
-
+// "homepage": "https://vinaymoolya.github.io/Crytpo_Tranalyzer/",
 export default App;
