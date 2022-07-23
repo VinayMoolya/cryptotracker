@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Crytpo_Tranalyzer/static/css/main.59d7cbca.css",
-    "main.js": "/Crytpo_Tranalyzer/static/js/main.d998c006.js",
-    "static/js/787.9340f2da.chunk.js": "/Crytpo_Tranalyzer/static/js/787.9340f2da.chunk.js",
-    "index.html": "/Crytpo_Tranalyzer/index.html",
-    "main.59d7cbca.css.map": "/Crytpo_Tranalyzer/static/css/main.59d7cbca.css.map",
-    "main.d998c006.js.map": "/Crytpo_Tranalyzer/static/js/main.d998c006.js.map",
-    "787.9340f2da.chunk.js.map": "/Crytpo_Tranalyzer/static/js/787.9340f2da.chunk.js.map"
+    "main.css": "/cryptotracker/static/css/main.59d7cbca.css",
+    "main.js": "/cryptotracker/static/js/main.07e897f6.js",
+    "static/js/787.9340f2da.chunk.js": "/cryptotracker/static/js/787.9340f2da.chunk.js",
+    "index.html": "/cryptotracker/index.html",
+    "main.59d7cbca.css.map": "/cryptotracker/static/css/main.59d7cbca.css.map",
+    "main.07e897f6.js.map": "/cryptotracker/static/js/main.07e897f6.js.map",
+    "787.9340f2da.chunk.js.map": "/cryptotracker/static/js/787.9340f2da.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.59d7cbca.css",
-    "static/js/main.d998c006.js"
+    "static/js/main.07e897f6.js"
   ]
 }
